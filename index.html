@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Für Ceydati ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-hearts" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <header class="topbar">
+      <div class="badge">📚 Prüfungsmorgen</div>
+      <div class="hint">Tipp: Klick auf die rechten Seiten zum Umblättern</div>
+    </header>
+
+    <section class="book" aria-label="Motivations-Buch">
+      <div class="book-inner" id="book">
+
+        <!-- Cover -->
+        <article class="page cover" data-page="0">
+          <div class="page-content">
+            <div class="cover-title">Für Ceydati ❤️</div>
+            <div class="cover-subtitle">Ein kleines Mut-Buch nur für dich</div>
+
+            <div class="cover-card">
+              <div class="big">Ich glaub an dich.</div>
+              <div class="small">Und ich drücke dir die Daumen mein Baby und bin mit den Gedanken bei dir🍀</div>
+            </div>
+
+            <button class="primary" id="startBtn">Aufschlagen ✨</button>
+            <div class="footer-note">— von mir, für dich</div>
+          </div>
+        </article>
+
+        <!-- Page 1 -->
+        <article class="page" data-page="1">
+          <div class="page-content">
+            <h2>Seite 1 Du schaffst das.</h2>
+            <p class="lead">
+              Hobi morgen ist deine Prüfung und ich weiß, wie viel du dafür getan hast.
+              Du bist fleißig, klug und stärker als dein Kopf manchmal denkt.
+            </p>
+
+            <div class="quote">
+              „Du musst nicht perfekt sein. Du musst nur du sein — und das reicht. ich werde sowieso immer hinter dir stehen ❤️“
+            </div>
+
+            <div class="box">
+              <h3>Morgen-Checkliste 📝</h3>
+              <ul>
+                <li>📄 Ausweis</li>
+                <li>🖊️ Stifte</li>
+                <li>💧 Wasser</li>
+                <li>🍫 Snack</li>
+                <li>❤️ Selbstvertrauen</li>
+              </ul>
+            </div>
+
+            <div class="list">
+              <div class="chip">✅ Ruhig atmen</div>
+              <div class="chip">✅ Schritt für Schritt</div>
+              <div class="chip">✅ Du hast das drauf</div>
+            </div>
+
+            <div class="page-controls">
+              <button class="ghost" data-action="prev">◀ Zurück</button>
+              <button class="ghost" data-action="next">Weiter ▶</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 2 -->
+        <article class="page" data-page="2">
+          <div class="page-content">
+            <h2>Seite 2 — Ich drücke dir die Daumen.</h2>
+
+            <p class="lead">
+              Egal wie nervös du bist: Nervosität heißt nur, dass es dir wichtig ist.
+              Und genau deshalb wirst du abliefern.
+            </p>
+
+            <div class="two-col">
+              <div class="box">
+                <h3>Mini-Power-Reminder</h3>
+                <ul>
+                  <li>Du kannst mehr als du glaubst.</li>
+                  <li>Du hast dich gut vorbereitet.</li>
+                  <li>Du wirst es schon schaffen.</li>
+                  <li>Ich bin stolz auf dich.</li>
+                </ul>
+              </div>
+              <div class="box">
+                <h3>Wenn du nervös wirst</h3>
+<ul>
+  <li>Denk dran, wie viel du investiert hast.</li>
+  <li>Du kannst das wirklich.</li>
+  <li>Fehler machen ist okay.</li>
+  <li>Ich stehe hinter dir und mache Duaa für dich ❤️.</li>
+</ul>
+              </div>
+            </div>
+
+            <button class="primary" id="confettiBtn">Konfetti-Mut 🎉</button>
+
+            <div class="page-controls">
+              <button class="ghost" data-action="prev">◀ Zurück</button>
+              <button class="ghost" data-action="next">Weiter ▶</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 3 (Final) -->
+        <article class="page" data-page="3">
+          <div class="page-content final">
+            <h2>Letzte Seite — Ich bin so stolz auf dich, Ceydati.</h2>
+
+            <p class="lead">
+              Egal wie morgen läuft: Du bist mutig, stark und unfassbar besonders.
+              Diese Prüfung ist nur ein Schritt — und du gehst ihn mit so viel Herz.
+            </p>
+
+            <button class="primary" id="proudBtn">Ich bin stolz auf dich ❤️(bitte drauf klicken Katze) </button>
+
+            <div class="hidden-message" id="hiddenMessage" aria-live="polite">
+              <p>
+                Ceydati… du hast so viel Stärke in dir.
+                Ich glaube wirklich an dich — und egal was ist:
+                Ich bin da. Ich halte dir den Rücken frei und Ich liebe dich. ❤️
+              </p>
+
+              <div class="photo-wrap">
+                <img src="foto.jpg" alt="Wir zwei" class="couple-photo is-bw" id="couplePhoto">
+                <div class="photo-hint">Tippe auf das Foto 💗</div>
+              </div>
+            </div>
+
+            <div class="page-controls">
+              <button class="ghost" data-action="prev">◀ Zurück</button>
+              <button class="primary" id="restartBtn">Nochmal lesen ↺</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <footer class="bottom">
+      <span class="tiny">Made with love • Tippe/Klicke zum Umblättern</span>
+    </footer>
+  </main>
+
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <audio id="bgMusic" loop preload="auto">
+         <source src="piano.mp3" type="audio/mpeg">
+     </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
